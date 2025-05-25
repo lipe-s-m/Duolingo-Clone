@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  font-size: 62.5%;
+}
+@font-face {
+  font-family: "boodle-demibold";
+  src: url("./app/assets/fonts/boodle/Boodle-DemiBold.otf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: "boodle-demibold", "Segoe UI", Tahoma, Geneva, Verdana,
+    sans-serif;
+}
