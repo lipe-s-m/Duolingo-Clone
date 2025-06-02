@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from '../../shared/header/header.component';
-import { FooterComponent } from '../../shared/footer/footer.component';
+import { LanguagesComponent } from './languages/languages.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-welcome',
   standalone: true,
-  imports: [HeaderComponent, FooterComponent],
+  imports: [LanguagesComponent, RouterModule],
   templateUrl: './welcome.component.html',
   styleUrl: './welcome.component.css',
 })

@@ -1,27 +1,89 @@
-main {
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 8rem;
+}
+
+.welcome {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
-  background-color: antiquewhite;
+  overflow: hidden;
 }
+
+.logo {
+  max-height: 50rem;
+  animation: pulsar 4s infinite ease-in-out;
+}
+
 .login {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: white;
-  /* padding: 2rem; */
   gap: 1.6rem;
-  border-radius: 1rem;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-.login h1 {
-  font-size: 2.8rem;
-  font-weight: 700;
-  color: rgb(75, 75, 75);
 }
 
-img {
-  max-height: 50rem;
+.login h1 {
+  width: 48rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: rgb(75, 75, 75);
+  font-size: 3.2rem;
+}
+
+.login a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33rem;
+  height: 4.8rem;
+  font-size: 1.5rem;
+  font-family: "boodle-bold", "Segoe UI", sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+  background-color: rgb(102, 209, 19);
+  color: white;
+  border: none;
+  border-radius: 1.2rem;
+  box-shadow: 0rem 0.4rem 0rem 0rem rgba(88, 167, 0, 1);
+  cursor: pointer;
+}
+
+.login a:hover {
+  background-color: rgba(108, 219, 23, 0.973);
+  transition: 100ms;
+}
+
+.login a:nth-child(3) {
+  background-color: white;
+  color: rgb(28, 176, 246);
+  border: 0.2rem solid rgba(28, 45, 53, 0.192);
+  box-shadow: 0rem 0.2rem 0rem 0rem rgba(28, 45, 53, 0.192);
+}
+
+.login a:nth-child(3):hover {
+  background-color: rgba(227, 230, 227, 0.199);
+  transition: 100ms;
+}
+
+.selecionar-idiomas {
+  width: 100%;
+
+}
+
+@keyframes pulsar {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
 }

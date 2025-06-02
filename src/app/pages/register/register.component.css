@@ -1,0 +1,61 @@
+h1 {
+  width: 48rem;
+  text-align: center;
+  margin: 7.4rem auto;
+  color: rgb(75, 75, 75);
+  font-size: 3rem;
+}
+
+ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(4rem, 22rem));
+  justify-content: center;
+  align-items: center;
+  padding: 0.6rem;
+  gap: 2.4rem;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 22rem;
+  background-color: white;
+  border: 0.2rem solid rgb(229, 229, 229);
+  box-shadow: 0rem 0.25rem 0rem 0rem rgb(229, 229, 229);
+  border-radius: 1.6rem;
+}
+
+li button {
+  cursor: inherit;
+  height: 100%;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+}
+
+li:hover {
+  cursor: pointer;
+  background-color: rgba(229, 229, 229, 0.5);
+  border: 0.2rem solid rgb(211, 211, 211);
+  box-shadow: 0rem 0.25rem 0rem 0rem rgb(211, 211, 211);
+}
+
+
+li img {
+  max-height: 12rem;
+  max-width: 12rem;
+  width: 60%;
+  min-height: 4rem;
+  border-radius: 2.4rem;
+}
+
+li h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: rgb(75, 75, 75);
+  text-align: center;
+  margin-top: 0.8rem;
+}

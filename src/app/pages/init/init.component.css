@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+  height: 100%;
+  gap: 2.4rem;
+}
+
+.duo-text {
+  border: 0.2rem solid rgb(229, 229, 229);
+  padding: 1.2rem;
+  border-radius: 1rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  border-right: 0.2rem solid transparent;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+}
+
+h1.animate {
+  border-right: 0.2rem solid rgba(255, 255, 255, 0.75);
+  animation: blinkCursor 1s steps(20) infinite normal, typing 0.7s steps(20) 200ms normal forwards;
+}
+
+button {
+  width: 17.4rem;
+  height: 5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgb(19, 31, 36);
+  background-color: rgb(147, 211, 51);
+  box-shadow: 0rem 0.4rem 0rem 0rem rgb(102, 156, 43);
+  border: none;
+  border-radius: 1.6rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(166, 236, 61);
+  box-shadow: 0rem 0.4rem 0rem 0rem rgb(121, 189, 49);
+  transition: 100ms;
+}
+
+
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+
+}
+
+@keyframes blinkCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
