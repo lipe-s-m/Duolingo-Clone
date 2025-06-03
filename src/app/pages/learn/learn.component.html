@@ -1,1 +1,28 @@
-<p>learn works!</p>
+<div class="container">
+  <div class="content">
+    <section class="header-language-level">
+      <img src="https://d35aaqx5ub95lt.cloudfront.net/images/48b38c250a652878bc0c779a07f2ca48.svg" alt="">
+      <div class="duo-text">
+        <img src="assets/images/DuoIdle.webp" alt="Duoligo gif" class="duo-gif">
+        <div class="duo-text-content">
+          <p [class.animate]="animate">{{duoText[duoMessageCount]}}</p>
+        </div>
+      </div>
+    </section>
+    <section class="options-language-level">
+      <div>
+        <ul>
+          <li [class.click]="itemClick === i" (click)="changeDuoText(i)" *ngFor="let option of options, let i = index">
+            <img src={{returnURL()}} alt="" />
+            {{options[i].option}}
+          </li>
+        </ul>
+      </div>
+    </section>
+    <p *ngIf="showError" class="error">Você deve selecionar uma opção!</p>
+  </div>
+
+  <div class="next">
+    <button (click)="nextPage()">Continuar</button>
+  </div>
+</div>

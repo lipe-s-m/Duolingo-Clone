@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-init',
@@ -19,9 +20,11 @@ export class InitComponent {
     // 'Thank you for using our application!',
   ];
 
+  constructor(private router: Router) {}
+
   nextMessage() {
     if (this.messageCount >= 2) {
-      alert('You have reached the end of the messages.');
+      this.router.navigate(['/learn']);
       return;
     }
     this.animate = false;

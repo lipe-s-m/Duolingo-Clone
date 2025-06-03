@@ -5,6 +5,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { MainLayoutComponent } from './layouts/main-layout/main-layout.component';
 import { BlankLayoutComponent } from './layouts/blank-layout/blank-layout.component';
 import { InitComponent } from './pages/init/init.component';
+import { LearnComponent } from './pages/learn/learn.component';
+import { QuizComponent } from './pages/learn/quiz/quiz.component';
 
 export const routes: Routes = [
   {
@@ -19,7 +21,11 @@ export const routes: Routes = [
   {
     path: '',
     component: BlankLayoutComponent,
-    children: [{ path: 'init', component: InitComponent, pathMatch: 'full' }],
+    children: [
+      { path: 'init', component: InitComponent, pathMatch: 'full' },
+      { path: 'learn', component: LearnComponent, pathMatch: 'full' },
+      { path: 'learn/quiz', component: QuizComponent, pathMatch: 'full' },
+    ],
   },
 
   { path: '**', redirectTo: '' },
